@@ -1,0 +1,23 @@
+artifact_path: file:///D:/Projects/player-performance-mlops/mlruns/269999209581277948/models/m-81d72ff8d9834706a184deffa755b71d/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.5
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.2.2
+    skops_trusted_types: null
+mlflow_version: 3.12.0
+model_id: m-81d72ff8d9834706a184deffa755b71d
+model_size_bytes: 27890560
+model_uuid: m-81d72ff8d9834706a184deffa755b71d
+prompts: null
+run_id: a7f9a424390d4e91a90dae914a02dae3
+utc_time_created: '2026-05-16 21:15:00.331498'

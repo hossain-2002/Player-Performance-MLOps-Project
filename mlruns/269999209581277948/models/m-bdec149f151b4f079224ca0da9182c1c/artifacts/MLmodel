@@ -1,0 +1,22 @@
+artifact_path: file:///D:/Projects/player-performance-mlops/mlruns/269999209581277948/models/m-bdec149f151b4f079224ca0da9182c1c/artifacts
+flavors:
+  python_function:
+    data: model.ubj
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.xgboost
+    python_version: 3.11.5
+  xgboost:
+    code: null
+    data: model.ubj
+    model_class: xgboost.sklearn.XGBRegressor
+    model_format: ubj
+    xgb_version: 1.7.6
+mlflow_version: 3.12.0
+model_id: m-bdec149f151b4f079224ca0da9182c1c
+model_size_bytes: 390266
+model_uuid: m-bdec149f151b4f079224ca0da9182c1c
+prompts: null
+run_id: 9e642b4be0414c42a6de5d8ba8796cdc
+utc_time_created: '2026-05-16 21:15:04.375675'

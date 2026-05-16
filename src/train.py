@@ -121,12 +121,25 @@ def main():
 
     print(f"\nBest model by RMSE: {best_name} (RMSE={best_metrics['rmse']:.4f})")
 
-    # 6) Save best model as pickle
+    # 6) Save best model
     models_dir = os.path.join(os.path.dirname(__file__), '..', 'models')
     os.makedirs(models_dir, exist_ok=True)
     best_model = fitted_models[best_name]
-    with open(os.path.join(models_dir, 'best_model.pkl'), 'wb') as f:
-        pickle.dump(best_model, f)
+    # If best model is XGBoost, save booster in JSON format for stable loading
+    if best_name.lower().startswith('xgboost'):
+        try:
+            booster = best_model.get_booster()
+            booster.save_model(os.path.join(models_dir, 'best_model.json'))
+            print(f"Saved XGBoost booster to {os.path.join(models_dir, 'best_model.json')}")
+        except Exception:
+            # fallback to pickle if getting booster fails
+            with open(os.path.join(models_dir, 'best_model.pkl'), 'wb') as f:
+                pickle.dump(best_model, f)
+            print(f"Saved best model pickle to {os.path.join(models_dir, 'best_model.pkl')}")
+    else:
+        with open(os.path.join(models_dir, 'best_model.pkl'), 'wb') as f:
+            pickle.dump(best_model, f)
+        print(f"Saved best model pickle to {os.path.join(models_dir, 'best_model.pkl')}")
 
 
 if __name__ == '__main__':
