@@ -66,7 +66,7 @@ player-performance-mlops/
 ### 1) Clone the repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/hossain-2002/Player-Performance-MLOps-Project.git
 cd player-performance-mlops
 ```
 
@@ -156,9 +156,9 @@ Model comparison results will be logged here after training.
 
 | Model | RMSE | MAE | R2 |
 |---|---:|---:|---:|
-| Linear Regression | TBD | TBD | TBD |
-| Random Forest Regressor | TBD | TBD | TBD |
-| XGBoost Regressor | TBD | TBD | TBD |
+| Linear Regression | 1.9142 | 1.4838 | 0.9228 |
+| Random Forest Regressor | 0.7945 | 0.5204 | 0.9867 |
+| XGBoost Regressor | 0.7390 | 0.5465 | 0.9885 |
 
 ## License
 
