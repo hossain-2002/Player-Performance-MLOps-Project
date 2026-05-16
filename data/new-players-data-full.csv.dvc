@@ -1,0 +1,5 @@
+outs:
+- md5: 9fc1bdc384fd97f9c70013facb0a347c
+  size: 11676726
+  hash: md5
+  path: new-players-data-full.csv
