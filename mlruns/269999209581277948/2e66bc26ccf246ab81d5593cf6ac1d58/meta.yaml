@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/Projects/player-performance-mlops/mlruns/269999209581277948/2e66bc26ccf246ab81d5593cf6ac1d58/artifacts
+end_time: 1778964111847
+entry_point_name: ''
+experiment_id: '269999209581277948'
+lifecycle_stage: active
+run_id: 2e66bc26ccf246ab81d5593cf6ac1d58
+run_name: RandomForest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778964094949
+status: 3
+tags: []
+user_id: User

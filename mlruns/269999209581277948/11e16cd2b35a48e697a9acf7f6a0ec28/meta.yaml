@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/Projects/player-performance-mlops/mlruns/269999209581277948/11e16cd2b35a48e697a9acf7f6a0ec28/artifacts
+end_time: 1778964115780
+entry_point_name: ''
+experiment_id: '269999209581277948'
+lifecycle_stage: active
+run_id: 11e16cd2b35a48e697a9acf7f6a0ec28
+run_name: XGBoost
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778964111853
+status: 3
+tags: []
+user_id: User

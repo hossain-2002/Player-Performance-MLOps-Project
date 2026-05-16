@@ -1,0 +1,10 @@
+artifact_location: file:///D:/Projects/player-performance-mlops/mlruns/269999209581277948/models/m-47ffcd89684e4109b4720f0f7f362b83/artifacts
+creation_timestamp: 1778964090216
+experiment_id: '269999209581277948'
+last_updated_timestamp: 1778964094933
+model_id: m-47ffcd89684e4109b4720f0f7f362b83
+model_type: null
+name: model
+source_run_id: 6e0ac8be253c4f3f97299123d0480865
+status: 2
+status_message: null
