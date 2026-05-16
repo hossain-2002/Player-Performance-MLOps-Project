@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/Projects/player-performance-mlops/mlruns/269999209581277948/3288408f549943fc87c0dc5116ef43da/artifacts
+end_time: 1778962736992
+entry_point_name: ''
+experiment_id: '269999209581277948'
+lifecycle_stage: active
+run_id: 3288408f549943fc87c0dc5116ef43da
+run_name: LinearRegression
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1778962730254
+status: 3
+tags: []
+user_id: User

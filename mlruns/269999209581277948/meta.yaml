@@ -1,0 +1,8 @@
+artifact_location: file:///D:/Projects/player-performance-mlops/mlruns/269999209581277948
+creation_time: 1778962729748
+experiment_id: '269999209581277948'
+last_update_time: 1778962729748
+lifecycle_stage: active
+name: player-performance
+trace_location: null
+workspace: default
