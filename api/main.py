@@ -12,6 +12,7 @@ from typing import Optional
 import numpy as np
 import xgboost as xgb
 from fastapi import FastAPI, HTTPException
+from fastapi.responses import HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
@@ -83,9 +84,17 @@ app.add_middleware(
 )
 
 
-@app.get("/")
+@app.get("/", response_class=HTMLResponse)
 async def root():
-    """Root endpoint returning a simple status message."""
+    """Serve the frontend HTML page."""
+    frontend_path = os.path.join(os.path.dirname(__file__), '..', 'frontend', 'index.html')
+    with open(frontend_path, 'r', encoding='utf-8') as f:
+        return f.read()
+
+
+@app.get("/api")
+async def api_status():
+    """API status endpoint."""
     return {"message": "Player Performance Prediction API", "status": "running"}
 
 
